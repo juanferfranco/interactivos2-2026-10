@@ -1,0 +1,302 @@
+---
+title: Unidad 4
+unitId: unit4
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+
+## Introducción 📜
+
+En la unidad anterior construiste la infraestructura técnica que permite la comunicación en tiempo real 
+entre múltiples clientes y tu aplicación de visuales. Implementaste la máquina de estados, 
+el servidor de comunicaciones, los clientes que envían datos y el cliente de control remoto. 
+Ahora llega el momento más emocionante: materializar visualmente la experiencia generativa que 
+conceptualizaste en la Unidad 2.
+
+¿Recuerdas el documento de diseño que creaste para una canción de Nerón Arkano? 
+Ese concepto, con sus fases emocionales, su mapeo Input-Process-Output y su 
+aplicación de Future Narratives, ahora se convertirá en tu punto de partida.
+
+## Cronograma sugerido ⏱️
+
+Te sugiero que trabajes esta aplicación por estado. Además que consideres 
+como parte de las restricciones de este ejercicio el tiempo que tienes disponible:
+
+Semana 1: 
+
+sesión 1 (presencial): planeación e inicio del estado 1  
+sesión 2 (presencial): estado 1 y estado 2 completos.  
+sesión 3 (independiente): estado 3 completo.
+
+Semana 2:
+
+sesión 4 (presencial): integración completa.  
+sesión 5 (independiente): demo.  
+sesión 3 (presencial): presentación y evaluación.
+
+## Set: ¿Qué aprenderás en esta unidad? 💡
+
+En esta unidad AJUSTARÁS e implementarás la experiencia generativa que 
+conceptualizaste en la Unidad 2, integrando tus algoritmos visuales específicos 
+con la infraestructura de comunicación que construiste en la Unidad 3.
+
+Al finalizar esta unidad habrás:
+
+1. **Traducido tu concepto a código**: cada fase emocional de tu diseño tendrá 
+su implementación visual específica correspondiente a los 3 estados de tu sistema técnico.
+
+2. **Implementado tu mapeo Input-Process-Output específico**: los datos que definiste en tu concepto original 
+y que luego ajustaste (voz, sensores, interacción del público) se transformarán según las reglas 
+generativas que diseñaste.
+
+3. **Materializado tus transiciones conceptuales**: las transiciones entre fases emocionales de tu canción se 
+convertirán en transiciones fluidas entre estados técnicos.
+
+4. **Desarrollado tu capa de interpretación estética personal**: traducirás los datos técnicos en las decisiones 
+visuales específicas que definiste en tu concepto original y que ajustaste a la infraestructura de comunicación 
+definida en la unidad anterior.
+
+## Seek: Investigación 🔎
+
+### Actividad 01
+
+#### Revisión y refinamiento del concepto original
+
+Antes de implementar, necesitas revisar y ajustar el diseño que creaste 
+en la Unidad 2, adaptándolo a las capacidades técnicas que ahora 
+tienes disponibles.
+
+1. **Paso 1: recuperación del concepto original**
+
+Retoma tu documento de diseño de la Actividad 04 de la Unidad 2. Relee tu concepto raíz, las fases emocionales 
+y el mapeo Input-Process-Output que definiste.
+
+2. **Paso 2: mapeo concepto → implementación técnica**
+
+Ahora debes hacer corresponder tu diseño conceptual con la arquitectura técnica que tienes:
+
+- Tus **fases emocionales** → Los **3 estados** de tu máquina de estados
+- Tus **inputs conceptuales** → Los **datos reales** de tus clientes (2 móviles, un desktop y un control remoto)
+- Tus **procesos generativos** → **Algoritmos específicos** implementables en p5.js
+- Tus **outputs conceptuales** → **Visuales técnicamente factibles**
+
+3. **Paso 3: refinamiento técnico**
+
+Ajusta tu concepto original considerando:
+
+- **Limitaciones técnicas**: ¿Algún input que diseñaste no es posible con tu arquitectura actual y cómo piensas superar esa limitación o simularla si es del caso?
+- **Oportunidades técnicas**: ¿Hay capacidades de tus clientes que no consideraste originalmente?
+- **Coherencia narrativa**: ¿Cómo adaptar las transiciones entre fases a tu sistema de estados?
+
+
+### Actividad 02
+
+#### Diseño técnico detallado de tu sistema
+
+Ahora convertirás cada fase emocional de tu concepto en especificaciones técnicas detalladas, definiendo 
+exactamente cómo implementarás cada aspecto visual.
+
+**Paso 1: especificación técnica por estado**
+
+Para cada uno de los estados de tu sistema (correspondientes a tus fases emocionales originales):
+
+1. **Algoritmo generativo específico**: basado en la emoción y concepto de esta fase, 
+¿Qué técnica algorítmica la representa mejor?
+
+2. **Elementos visuales clave**: formas, colores, movimientos, texturas que materializan 
+tu concepto para esta fase.
+
+3. **Mapeo detallado de datos**: cómo cada input específico de tus clientes afecta qué 
+parámetros visuales específicos.
+
+**Paso 2: tabla de mapeo técnico detallado**
+
+Para cada estado, crea una tabla como esta, pero con tus datos específicos:
+
+| Cliente | Dato técnico | Parámetro visual de mi concepto | Rango de transformación |
+|---------|-------------|--------------------------------|------------------------|
+| Móvil 1 | Input | [tu parámetro específico] | [tu rango específico] |
+| Móvil 2 | Input | [tu parámetro específico] | [tu rango específico] |
+| Desktop 1 | Input | [tu parámetro específico] | [tu rango específico] |
+| Remoto | Parámetro 1 | [tu parámetro específico] | [tu rango específico] |
+| Remoto | Parámetro 2 | [tu parámetro específico] | [tu rango específico] |
+| Remoto | Parámetro 3 | [tu parámetro específico] | [tu rango específico] |
+
+**Paso 3: Diseño de transiciones narrativas**
+
+¿Cómo se manifestarán técnicamente las transiciones entre las fases emocionales de tu canción? 
+Diseña transiciones que mantengan la coherencia narrativa de tu concepto original.
+
+## Apply: Aplicación 🛠
+
+Ahora integrarás tus visuales conceptuales con la infraestructura de comunicación, creando la materialización 
+completa de tu experiencia generativa original.
+
+### Actividad 03
+
+#### Prototipado de tus algoritmos específicos
+
+Ahora implementarás los algoritmos visuales específicos que necesitas para tu concepto.
+
+**Fase 1: implementación de tus algoritmos**
+
+Crea 3 sketches separados en p5.js, uno para cada estado/fase emocional de tu concepto. Cada sketch debe:
+
+1. Implementar el algoritmo generativo específico que elegiste para esa fase emocional.
+2. Incluir controles temporales que simulen los inputs específicos que definiste en tu concepto.
+3. Reflejar visualmente la emoción y estética específica de esa fase de tu canción.
+4. Mantener la coherencia visual con tu concepto raíz.
+
+**Fase 2: optimización para tu experiencia específica**
+
+Optimiza cada sketch considerando:
+
+- El número de elementos visuales que requiere tu concepto específico
+- Los efectos visuales particulares que diseñaste  
+- La duración aproximada de cada fase en tu canción
+- Las transiciones específicas que necesitas
+
+**Fase 3: Validación conceptual**
+
+Prueba cada prototipo preguntándote: ¿Este algoritmo comunica la emoción que diseñé para esta fase? 
+¿Se siente coherente con mi concepto raíz?
+
+### Actividad 04
+
+#### Integración de tu sistema conceptual completo
+
+**Fase 1: integración concepto → técnica**
+
+Modifica tu aplicación de visuales de la unidad anterior para:
+
+1. Reemplazar los estados genéricos con tus algoritmos específicos de cada fase emocional.
+2. Implementar el mapeo de datos específico que diseñaste para tu concepto.
+3. Asegurar que cada fase emocional reciba y procese los datos según tu diseño original.
+4. Mantener la intención narrativa de tu concepto durante toda la experiencia.
+
+**Fase 2: implementación de tus transiciones narrativas**
+
+Implementa las transiciones específicas entre tus fases emocionales que:
+
+1. Sirvan a la progresión emocional de tu canción específica.
+2. Mantengan la coherencia narrativa de tu concepto raíz.
+3. Respeten el timing y estructura de tu canción elegida.
+4. Puedan ser controladas para seguir la performance en vivo.
+
+**Fase 3: capa de interpretación de tu concepto**
+
+Implementa lógica específica que:
+
+1. Mantenga la coherencia estética de tu concepto durante cambios de datos.
+2. Agregue los "eventos especiales" que definiste en tu concepto original.
+3. Respete los principios de Future Narratives que aplicaste en tu diseño.
+4. Preserve la agencia distribuida que conceptualizaste.
+
+**Fase 4: optimización y preparación final**
+
+Realiza las optimizaciones finales:
+
+1. Ajusta los rangos de mapeo basándote en pruebas reales.
+2. Refina la respuesta visual para que se sienta natural e intuitiva.
+
+## Evidencias 🗂️
+
+<Aside type="note" title="RUBRICA!">
+- En bitacora.md solo colocarás un HIPERVÍNCULO al video de youtube y 
+tres capturas de pantalla que representen tres momentos importantes 
+de tu sistema en cada estado. Si no cumples con este formato de entrega 
+tendrás una penalización de 0.5 en la nota.
+- En el directorio proyectoNeron debe estar todo el código  que permita 
+reproducir en cualquier momento el demo. Si el proyecto no reproduce 
+el demo la nota será 0.
+- Si no se entrega un demo del sistema la nota es 0, aunque se entregue 
+el código que lo reproduzca.
+- Si no presentas el demo en la sesión de cierre de la unidad tienes 
+una penalización de 1 unidad en la nota final.
+
+| Escala de evaluación | Nota 
+| :--- | :--- 
+| Demo con 3 estados sin fallas | 5
+| Demo con 2 estados sin fallas | 4
+| Demo con 1 estado sin fallas | 3
+| Demo con estados incompletos | 2
+| Demo con fallas críticas, no es comprensible | 1
+| No se entrega el demo | 0
+
+</Aside>
+
+<Aside type="danger" title="EVIDENCIAS EN BITÁCORA">
+
+En la unidad4 tendrás:
+
+<FileTree>
+- bitacora.md
+- proyectoNeron
+</FileTree>
+
+
+En el directorio proyectoNeron subirás los archivos del proyecto completo, 
+siguiendo esta estructura:
+
+<FileTree>
+- .gitignore
+- package-lock.json
+- package.json
+- server.js
+- public
+  - clientem1
+    - index.html
+    - sketch.js
+    - style.css
+  - clientem2
+    - index.html
+    - sketch.js
+    - style.css
+  - cliented1
+    - index.html
+    - sketch.js
+    - style.css
+  - remoto
+    - index.html
+    - sketch.js
+    - style.css
+  - visuales
+    - index.html
+    - sketch.js
+    - style.css
+</FileTree>
+
+
+2. **Enlace a youtube de un video no listado** con un demo COMPLETO 
+de tu sistema funcionando:
+
+- La calidad mínima del video debe ser 1080p.
+- El video debe tener una introducción de 10 segundos y luego las visuales con el audio del 
+tema musical.
+- Debes capturar la pantalla de cada dispositivo y luego realizar una composición 
+de esas pantallas en un editor de video.
+- En la introducción debes identificar con un texto la pantalla de cada dispositivo 
+y cuáles será los inputs y parámetros que se capturarán de 
+cada cliente según corresponda.
+- Luego a medida que avanzas en el video, debes indicar con texto sobre 
+la pantalla de cada dispositivo qué está pasando con las entradas y cómo 
+está afectando las visuales.
+- Debes mostrar claramente en qué momento cambias de estado.
+- Al cambiar parámetros en el remoto debes indicar con texto en la pantalla 
+del remoto qué está pasando y cómo esto afecta las visuales.
+
+</Aside>
+
+## Reflect: Consolidación y metacognición 🤔
+
+En este punto hemos llegado al final de la primera parte del curso. Lo que 
+sigue en esta segunda parte es que practiques de nuevo todo lo aprendido, 
+pero ahora tu podrás seleccionar el tema musical que más te inspire. Por tanto, 
+te pediré que hagas un balance y converses con tu compañero acerca 
+de dos asuntos:
+
+1. ¿Qué hice bien en esta unidad que debo continuar haciendo para 
+este segundo ejercicio?
+2. ¿Qué debería comenzar a hacer para mejorar en este segundo ejercicio?
