@@ -2,3 +2,125 @@
 title: Unidad 3
 unitId: unit3
 ---
+import { Aside } from '@astrojs/starlight/components';
+
+## Introducción 📜
+
+En esta unidad continuaremos con el caso de estudio de la unidad anterior, pero esta vez nos enfocaremos en el control de parámetros. 
+Vamos a controlar parámetros de las visuales a través de una superficie de control personalizada creada con Open Stage Control.
+
+## Rúbrica de evaluación de la unidad 📝
+
+:::note[Transparencia]
+Esta rúbrica se socializa antes de la sustentación. La sustentación se 
+basa en lo presentado en la aplicación y lo documentado en la bitácora 
+de aplicación correspondiente a la fase apply.
+:::
+
+### Requisito de salida (condición necesaria)
+
+:::caution[Para poder cerrar la evaluación y registrar la nota]
+La **bitácora de reflexión** debe estar diligenciada antes de terminar 
+la sesión final de la unidad y debe ser enseñada al profesor 
+antes de abandonar el aula.
+La presentación de la bitácora de reflexión es un requisito indispensable 
+para montar la nota final en la plataforma académica. Si no se cumple este 
+requisito, la nota final de la unidad será 0.0.
+:::
+
+---
+
+### Rúbrica analítica
+
+:::tip[Evidencias evaluadas]
+
+1) Funcionamiento de la aplicación + documentación en bitácora de aplicación.
+2) Sustentación a partir de la app y la bitácora.
+
+:::
+
+| Criterio (peso) | Cumple plenamente (5.0) | Se cumple medianamente (4.0)| Problemas importantes (3.0)| Falta comprensión básica (2.0) | No hay evidencia (0.0)
+|---|---|---|---|---|---|
+| **1. Aplicación + bitácora (40%)** | La app se ejecuta sin fallos en el entorno acordado. Evidencia completa y verificable en bitácora. Todo consistente con lo mostrado en la demo. | La app funciona y cumple lo esencial. La bitácora permite verificar, pero hay **1–2 vacíos menores**| La app funciona parcialmente o depende de condiciones no declaradas. Bitácora con **vacíos importantes** o incompleta. | La app no corre o no demuestra lo requerido. La bitácora no permite verificación de la app.| No se entregaron evidencias o no se puede acceder a ellas |
+|Evaluación||||||
+| **2. Sustentación (60%)** | Responde a las preguntas con precisión, conectando: **(a) lo que se ve**, **(b) cómo está hecho**, y **(c) por qué**. Usa su bitácora para justificar decisiones. Reconoce límites/errores y propone cómo probar/mejorar. | Respuestas correctas pero con **imprecisiones menores** o justificación superficial. Usa parcialmente la bitácora para sustentar. | Responde solo “qué hizo” pero le cuesta explicar “cómo” o “por qué”. Necesita guía para conectar con su propia evidencia/bitácora. | No logra responder de forma coherente o responde sin relación con lo presentado/documentado. Evidencia falta de comprensión básica del trabajo entregado. | No se entregaron evidencias o no se puede acceder a ellas |
+|Evaluación||||||
+---
+
+:::tip[Cálculo de la nota]
+
+$$
+Nota = C_1*0.4  + C_2*0.6
+$$
+
+:::
+
+---
+
+## Set: ¿Qué aprenderás en esta unidad? 💡
+
+En esta fase vamos a introducir al caso de estudio superficies de control, que son 
+superficies físicas o virtuales que permiten controlar parámetros de una obra a través de la interacción. 
+
+En esta unidad usaremos [Open Stage Control](https://openstagecontrol.ammd.net/), una plataforma de 
+código abierto que permite crear superficies de control personalizadas y conectarlas a través del protocolo OSC.
+### Actividad 01
+
+Vamos a comenzar con un experimento antes de modificar nuestro caso de estudio. El objetivo de este experimento es 
+familiarizarnos con Open Stage Control y entender cómo funciona la integración a través de OSC. Para 
+ello, vamos a usar una aplicación de prueba que puedes descargar de 
+[este](https://github.com/juanferfranco/OpenStageControlUITest) enlace.
+
+:::caution[📤 Bitácora]
+Vas a documentar en tu bitácora de aprendizaje los pasos necesarios para configurar Open Stage Control 
+e integrarlo con el caso de estudio de la unidad anterior.
+:::
+
+## Seek: Investigación 🔎
+
+### Actividad 02
+
+Ahora es momento de adentrarnos en el [caso de estudio](https://github.com/juanferfranco/strudelP5-tests) y en particular 
+en las visuales del archivo visualesMin.html. El objetivo de esta actividad es que seleccionemos un parámetro visual 
+que nos gustaría controlar a través de Open Stage Control, y que investiguemos cómo podríamos hacerlo.
+
+:::caution[📤 Bitácora]
+Docuementa en tu bitácora de aprendizaje todos los pasos, códigos, configuraciones y decisiones que tomes 
+durante tu proceso de investigación.
+:::
+
+## Apply: Aplicación 🛠
+
+Es momento de aplicar lo que hemos aprendido y experimentado en las fases anteriores para crear una obra que 
+integre el control de parámetros a través de Open Stage Control.
+
+### Actividad 03
+
+Vuelve a la obra que vienes construyendo desde las unidades anteriores y selecciona un parámetro visual que te 
+gustaría controlar a través de Open Stage Control.
+
+:::caution[📤 Bitácora]
+Documenta en tu bitácora de aplicación todos los pasos, códigos, configuraciones y decisiones que tomes durante 
+tu proceso de aplicación.
+:::
+
+<Aside type="tip" title="Preparate para presentar y explicar tu obra">
+En la última sesión de la unidad, presentarás tu obra al grupo.
+Prepárate para presentarla siguiendo el formato de live coding: mostrarás 
+cómo funciona en vivo y explicarás las decisiones que tomaste durante 
+su creación. 
+</Aside>
+
+## Reflect: Consolidación y metacognición 🤔
+
+### Actividad 05
+
+Es momento de reflexionar y actualizar la arquitectura del sistema que has venido construyendo a lo largo de las 
+unidades anteriores.
+
+:::caution[📤 Bitácora]
+En tu bitácora de reflexión, actualiza la arquitectura del sistema que has venido construyendo a lo largo de las 
+unidades anteriores, integrando el control de parámetros a través de Open Stage Control. 
+:::
+
+
