@@ -2,3 +2,176 @@
 title: Unidad 8
 unitId: unit8
 ---
+
+import { Aside } from '@astrojs/starlight/components';
+
+## Introducción 📜
+
+Esta es la unidad final del curso. Su propósito es doble: primero, 
+**documentar tu obra de manera profesional** para que cualquier persona 
+pueda entenderla y reproducirla; segundo, **presentar tu obra en vivo** 
+para que todos podamos disfrutarla.
+
+:::note[Importante]
+La **evaluación** de esta unidad se basa exclusivamente en la **documentación**. 
+La presentación en vivo **no se evalúa**: es un espacio para disfrutar 
+las obras de todos. ¡Disfruta el momento!
+:::
+
+## Rúbrica de evaluación de la unidad 📝
+
+:::note[Transparencia]
+Esta rúbrica se socializa antes de la entrega de la documentación. 
+La evaluación se basa exclusivamente en la documentación entregada.
+:::
+
+### Requisito de salida (condición necesaria)
+
+:::caution[Para poder cerrar la evaluación y registrar la nota]
+La **documentación completa** debe estar publicada en el repositorio 
+público de GitHub antes de la fecha límite acordada. La publicación 
+de la documentación es un requisito indispensable para montar la nota 
+final en la plataforma académica. Si no se cumple este requisito, 
+la nota final de la unidad será 0.0.
+:::
+
+---
+
+### Rúbrica analítica
+
+:::tip[Evidencias evaluadas]
+
+La documentación publicada en el repositorio público de GitHub.
+
+:::
+
+| Criterio (peso) | Cumple plenamente (5.0) | Se cumple medianamente (4.0)| Problemas importantes (3.0)| Falta comprensión básica (2.0) | No hay evidencia (0.0)
+|---|---|---|---|---|---|
+| **1. Diagrama del sistema (20%)** | Diagrama completo, claro, con todos los componentes y sus conexiones. Coherente con la obra presentada. | Diagrama legible pero con **1-2 componentes o conexiones faltantes**. | Diagrama incompleto o confuso. No refleja fielmente el sistema real. | Diagrama muy básico que no permite entender la arquitectura. | No se entregó. |
+|Evaluación||||||
+| **2. Paso a paso para reproducir (30%)** | Instrucciones claras, completas y verificables. Un tercero podría reproducir la obra siguiéndolas. Todos los archivos están en el repositorio. | Instrucciones que cubren lo esencial pero con **1-2 pasos ambiguos o faltantes**. | Instrucciones incompletas o que asumen conocimiento no documentado. Faltan archivos en el repositorio. | Instrucciones que no permiten reproducir la obra. | No se entregó. |
+|Evaluación||||||
+| **3. Explicación y justificación (30%)** | Explicación detallada del funcionamiento técnico y estético. Justifica con claridad **por qué** se tomaron las decisiones. Conecta técnica con concepto artístico. | Explicación correcta pero con justificación **superficial** en algún aspecto. | Explica "qué" pero no "por qué". Falta conexión entre decisiones técnicas y estéticas. | Explicación confusa o que no refleja comprensión del propio trabajo. | No se entregó. |
+|Evaluación||||||
+| **4. Calidad general de la documentación (20%)** | Documentación bien redactada, organizada, con imágenes/diagramas de apoyo. Se nota cuidado y profesionalismo. | Documentación aceptable pero con problemas menores de organización o redacción. | Documentación desorganizada o con vacíos que dificultan la lectura. | Documentación mínima, sin estructura visible. | No se entregó. |
+|Evaluación||||||
+---
+
+:::tip[Cálculo de la nota]
+
+$$
+Nota = C_1*0.2  + C_2*0.3 + C_3*0.3 + C_4*0.2
+$$
+
+:::
+
+---
+
+## Set: Estructura de la documentación 💡
+
+La documentación de tu obra debe incluir tres elementos fundamentales.
+
+### Actividad 01
+
+#### Organiza tu documentación
+
+Tu documentación debe contener:
+
+1. **Diagrama del sistema:** Un diagrama claro y completo que muestre 
+todos los componentes de tu obra y cómo se conectan entre sí 
+(audio, visuales, control, público, dispositivos, protocolos, etc.).
+
+2. **Paso a paso para reproducir la obra:** Una guía que permita a cualquier 
+persona (con conocimientos técnicos básicos) poner en funcionamiento 
+tu obra desde cero. Debe incluir: requisitos de software y hardware, 
+instalación de dependencias, configuración, y ejecución.
+
+3. **Explicación detallada:** Una descripción de cómo funciona tu obra 
+y por qué tomaste las decisiones técnicas y estéticas que tomaste. 
+Debe conectar el concepto artístico con la implementación técnica.
+
+:::caution[📤 Bitácora]
+Organiza todo el material que has acumulado durante las unidades 5, 6 y 7. 
+Identifica qué información ya tienes y qué te falta por documentar.
+:::
+
+## Seek: Elaboración de la documentación 🔎
+
+### Actividad 02
+
+#### Escribe la documentación
+
+Elabora cada una de las tres secciones de la documentación en el README.md 
+de tu repositorio público de GitHub:
+
+**Sección 1 — Diagrama del sistema:**
+* Usa herramientas como draw.io, Mermaid, Excalidraw o similar.
+* Incluye todos los componentes: software, hardware, protocolos de comunicación.
+* Muestra el flujo de datos entre componentes.
+
+**Sección 2 — Paso a paso para reproducir:**
+* Lista los requisitos previos (software, hardware, cuentas, etc.).
+* Describe cada paso de forma clara y ordenada.
+* Incluye comandos exactos, configuraciones, y capturas de pantalla si es necesario.
+* Verifica que TODOS los archivos necesarios estén en el repositorio.
+
+**Sección 3 — Explicación y justificación:**
+* Explica cómo funciona cada componente del sistema.
+* Justifica las decisiones técnicas: ¿por qué esa herramienta?, ¿por qué 
+ese protocolo?, ¿por qué esa arquitectura?
+* Justifica las decisiones estéticas: ¿por qué esos sonidos?, ¿por qué 
+esas visuales?, ¿por qué esa forma de participación del público?
+* Conecta las decisiones con el concepto artístico de tu obra.
+
+:::caution[📤 Bitácora]
+Publica la documentación completa en el README.md de tu repositorio 
+público de GitHub.
+:::
+
+## Apply: Refinamiento y prueba de reproducibilidad 🛠
+
+### Actividad 03
+
+#### Verifica tu documentación
+
+Pide a un compañero que intente seguir tu paso a paso para reproducir 
+tu obra. Observa dónde se traba, qué preguntas hace, qué pasos 
+no están claros.
+
+:::caution[📤 Bitácora]
+Documenta en tu bitácora:
+* Los resultados de la prueba de reproducibilidad.
+* Los ajustes que realizaste a la documentación a partir de la retroalimentación.
+* Confirma que la versión final de la documentación está publicada 
+en tu repositorio de GitHub.
+:::
+
+### Actividad 04
+
+#### Ensaya la presentación en vivo
+
+Prepara todo lo necesario para la presentación en vivo de tu obra. 
+Verifica que el sistema funcione de principio a fin.
+
+<Aside type="tip" title="Recuerda">
+La presentación en vivo no se evalúa. Es un espacio para que todos 
+disfrutemos las obras. ¡Prepárate para pasarla bien!
+</Aside>
+
+## Reflect: Presentación en vivo 🎉
+
+### Actividad 05
+
+#### ¡Presenta tu obra!
+
+Llegó el momento de mostrar tu obra al mundo. Presenta tu obra en vivo 
+para tus compañeros y profesor. Este es un espacio de celebración 
+y disfrute, no de evaluación.
+
+:::caution[📤 Bitácora]
+En tu bitácora de reflexión final:
+* ¿Qué aprendiste durante el proceso de crear tu obra?
+* ¿Qué harías diferente si volvieras a empezar?
+* ¿Cómo fue la experiencia de presentar tu obra en vivo?
+* ¿Qué te llevas de este curso para tu práctica profesional?
+:::

@@ -2,3 +2,154 @@
 title: Unidad 5
 unitId: unit5
 ---
+
+import { Aside } from '@astrojs/starlight/components';
+
+## Introducción 📜
+
+Bienvenido a la segunda parte del curso. A partir de esta unidad, dejarás 
+de trabajar con el caso de estudio compartido y comenzarás a construir 
+**tu propia obra interactiva original**. En las unidades 5, 6 y 7 irás 
+construyendo tu obra capa por capa (tal como lo hicimos en las unidades 1-4, 
+pero ahora con total autonomía creativa y técnica). En la unidad 8 
+documentarás tu obra y la presentarás en vivo.
+
+El objetivo de esta unidad es doble: primero, **conceptualizar tu proyecto de curso** 
+(definir qué quieres crear, por qué y para quién) y segundo, **implementar 
+la primera capa de tu obra: el audio generativo**.
+
+## Rúbrica de evaluación de la unidad 📝
+
+:::note[Transparencia]
+Esta rúbrica se socializa antes de la sustentación. La sustentación se 
+basa en lo presentado en la aplicación y lo documentado en la bitácora 
+de aplicación correspondiente a la fase apply.
+:::
+
+### Requisito de salida (condición necesaria)
+
+:::caution[Para poder cerrar la evaluación y registrar la nota]
+La **bitácora de reflexión** debe estar diligenciada antes de terminar 
+la sesión final de la unidad y debe ser enseñada al profesor 
+antes de abandonar el aula.
+La presentación de la bitácora de reflexión es un requisito indispensable 
+para montar la nota final en la plataforma académica. Si no se cumple este 
+requisito, la nota final de la unidad será 0.0.
+:::
+
+---
+
+### Rúbrica analítica
+
+:::tip[Evidencias evaluadas]
+
+1) Funcionamiento de la aplicación + documentación en bitácora de aplicación.
+2) Sustentación a partir de la app y la bitácora.
+
+:::
+
+| Criterio (peso) | Cumple plenamente (5.0) | Se cumple medianamente (4.0)| Problemas importantes (3.0)| Falta comprensión básica (2.0) | No hay evidencia (0.0)
+|---|---|---|---|---|---|
+| **1. Aplicación + bitácora (40%)** | La app se ejecuta sin fallos en el entorno acordado. Evidencia completa y verificable en bitácora. Todo consistente con lo mostrado en la demo. | La app funciona y cumple lo esencial. La bitácora permite verificar, pero hay **1–2 vacíos menores**| La app funciona parcialmente o depende de condiciones no declaradas. Bitácora con **vacíos importantes** o incompleta. | La app no corre o no demuestra lo requerido. La bitácora no permite verificación de la app.| No se entregaron evidencias o no se puede acceder a ellas |
+|Evaluación||||||
+| **2. Sustentación (60%)** | Responde a las preguntas con precisión, conectando: **(a) lo que se ve**, **(b) cómo está hecho**, y **(c) por qué**. Usa su bitácora para justificar decisiones. Reconoce límites/errores y propone cómo probar/mejorar. | Respuestas correctas pero con **imprecisiones menores** o justificación superficial. Usa parcialmente la bitácora para sustentar. | Responde solo "qué hizo" pero le cuesta explicar "cómo" o "por qué". Necesita guía para conectar con su propia evidencia/bitácora. | No logra responder de forma coherente o responde sin relación con lo presentado/documentado. Evidencia falta de comprensión básica del trabajo entregado. | No se entregaron evidencias o no se puede acceder a ellas |
+|Evaluación||||||
+---
+
+:::tip[Cálculo de la nota]
+
+$$
+Nota = C_1*0.4  + C_2*0.6
+$$
+
+:::
+
+---
+
+## Set: Conceptualización de tu obra 💡
+
+Antes de escribir una sola línea de código, necesitas definir **qué** quieres crear 
+y **por qué**. Un concepto claro te dará dirección para todas las decisiones 
+técnicas y estéticas que tomarás en las siguientes unidades.
+
+### Actividad 01
+
+#### Define el concepto de tu obra
+
+Responde a estas preguntas en tu bitácora:
+
+* **¿Qué quieres comunicar o provocar con tu obra?** (intención artística/estética)
+* **¿En qué contexto se presentará?** (sala oscura, espacio abierto, escenario, etc.)
+* **¿Cuál es la experiencia que deseas para el público?** (contemplativa, participativa, inmersiva, etc.)
+* **¿Qué rol tendrá el público?** (observador, participante activo, co-creador, etc.)
+
+:::caution[📤 Bitácora]
+Documenta en tu bitácora:
+* Las respuestas a las preguntas anteriores.
+* Un primer diagrama de arquitectura de tu sistema (componentes que anticipas 
+necesitar y cómo se conectarán).
+* Al menos 3 referentes artísticos o técnicos que inspiran tu propuesta 
+(incluye enlaces, imágenes o videos).
+:::
+
+## Seek: Investigación de referentes y técnicas 🔎
+
+### Actividad 02
+
+#### Investigación de referentes
+
+Ahora que tienes un concepto definido, investiga obras, artistas o proyectos 
+que se relacionen con tu propuesta. Busca específicamente:
+
+* Obras que usen audio generativo de forma similar a lo que imaginas.
+* Técnicas de síntesis o manipulación de audio que sirvan a tu concepto.
+* Herramientas o librerías que podrían complementar lo que ya conoces.
+
+:::caution[📤 Bitácora]
+Documenta en tu bitácora:
+* Los referentes encontrados y por qué son relevantes para tu obra.
+* Las técnicas de audio generativo que planeas usar y por qué se ajustan 
+a tu concepto.
+* Cualquier herramienta nueva que hayas descubierto y que consideres usar.
+:::
+
+## Apply: Implementación del audio generativo 🛠
+
+Es momento de construir la primera capa de tu obra.
+
+### Actividad 03
+
+#### Crea el audio generativo de tu obra
+
+Usando Strudel (o la herramienta que consideres más adecuada para tu concepto), 
+crea la pieza de audio generativo de tu obra. Este audio debe responder 
+al concepto que definiste en la fase Set.
+
+:::caution[📤 Bitácora]
+Documenta en tu bitácora de aplicación:
+* El proceso de creación de tu audio generativo.
+* Las decisiones técnicas y estéticas que tomaste y **por qué**.
+* El código completo de tu pieza de audio.
+* Instrucciones paso a paso para reproducir tu audio.
+:::
+
+<Aside type="tip" title="Prepárate para presentar y explicar tu obra">
+En la última sesión de la unidad, presentarás tu concepto y tu pieza de audio 
+al grupo. Prepárate para explicar: qué quieres lograr con tu obra, 
+por qué elegiste ese enfoque de audio, y cómo suena lo que llevas hasta ahora.
+</Aside>
+
+## Reflect: Consolidación y metacognición 🤔
+
+### Actividad 04
+
+Es momento de reflexionar sobre lo que has construido.
+
+:::caution[📤 Bitácora]
+En tu bitácora de reflexión:
+* Evalúa si el audio generativo que creaste logra la intención estética 
+que planteaste en tu concepto. ¿Qué ajustarías?
+* Actualiza el diagrama de sistema de tu obra incorporando los detalles 
+reales de la implementación del audio.
+* Describe los principales desafíos que enfrentaste y cómo los resolviste.
+:::
